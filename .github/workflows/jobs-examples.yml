@@ -12,4 +12,5 @@ jobs:
   job2:
     runs-on: ubuntu-latest
     steps:
- 
+      - name: step do job2
+        run: echo "Hello, world! job2."
