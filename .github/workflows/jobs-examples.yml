@@ -1,6 +1,6 @@
 name: jobs-examples
 on:
-  push:
+  push
 
 jobs:
   build:
