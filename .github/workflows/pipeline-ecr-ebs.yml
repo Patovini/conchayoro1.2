@@ -2,7 +2,8 @@ name: pipeline-ecr-ebs
 
 on:
   push:
-    branches: [ main ]
+    branches:
+      - '**'
 
 env:
   AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
