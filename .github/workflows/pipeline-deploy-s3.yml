@@ -45,4 +45,3 @@ jobs:
 
       - name: Deploy to S3
         run: aws s3 cp frontend/.next/server/app s3://$BUCKET_S3 --recursive --acl public-read
-        shell: bash
