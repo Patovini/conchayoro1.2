@@ -1,8 +1,6 @@
 name: pipeline-deploy-s3
 on:
-  push:
-    branches:
-      - '**'
+  workflow_dispatch
 
 jobs:
   build:
