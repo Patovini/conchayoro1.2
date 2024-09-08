@@ -54,6 +54,11 @@ let ProductsService = class ProductsService {
         await product.update(productUpdated);
         return product;
     }
+    async findByCriteria(criteria) {
+        return this.productModel.findAll({
+            where: criteria,
+        });
+    }
 };
 exports.ProductsService = ProductsService;
 exports.ProductsService = ProductsService = __decorate([

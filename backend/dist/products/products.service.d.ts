@@ -9,4 +9,5 @@ export declare class ProductsService {
     findOne(id: string): Promise<Product>;
     remove(id: string): Promise<void>;
     update(id: string, updateProductDto: UpdateProductDto): Promise<Product>;
+    findByCriteria(criteria: any): Promise<Product[]>;
 }
